@@ -1,0 +1,286 @@
+/*Default settings on all of HTML elements*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: montserrat, sans-serif;
+    height: 100vh;
+}
+
+/*main page layout*/
+main {
+    display: flex;
+    max-width: 800px;
+    height: 100%;
+    margin: auto;
+}
+
+.img-container {
+    padding-top: 5px;
+}
+
+/*Gives us more control over our image sizes*/
+.img-container img {
+    width: 100%;/*Changes the width and keepts the aspect ratio*/
+}
+
+/*sets all icons to be 48 pixels squared*/
+.icon {
+    width: 48px;
+}
+
+.contact-row {
+    display: flex;
+    align-items: center;
+}
+
+#left {
+    padding: 2px;
+    width: 40%;
+    background: #264653;
+    color: #E9C46A;
+}
+
+#contact-info p {
+    margin: 0px 0px 10px 10px;
+}
+
+#right {
+    padding: 2px;
+    width: 60%;
+    background: #2A9D8F;
+    color: #FFB30F;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    padding-bottom: 10px;
+    color: white;
+}
+/*---------------------All bars in the skills bar graphs----------------------*/
+#display-pic {
+    width: 200px;
+    margin: auto; /*Centers the element*/
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+/*a style that makes it look like the element increases in size when hovered over*/
+#display-pic:hover {
+    transition: all 1s;
+    box-shadow: 0px 0px 10px white;
+    transform: scale(1.05);
+}
+
+
+/*---------------------All bars in the skills bar graphs----------------------*/
+#skills div {
+    height: 25px;
+    background: #E76F51;
+    margin: 10px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#skill1:hover { /*animates for 1 second when the mouse hovers over it*/
+    transition: all 3s;
+    width: 95%;
+}
+
+#skill2 {
+    animation: s2 2s forwards;
+}
+
+@keyframes s2 {
+    to {
+        width: 50%;
+    }
+}
+
+#skill3 {
+    animation: s3 2s forwards;
+}
+
+@keyframes s3 {
+    to {
+        width: 63%;
+    }
+}
+
+#skill4 {
+    animation: s4 2s forwards;
+}
+
+@keyframes s4 {
+    to {
+        width: 72%;
+    }
+}
+
+#skill5 {
+    animation: s5 2s forwards;
+}
+
+@keyframes s5 {
+    to {
+        width: 85%;
+    }
+}
+
+/*---------------------All pie charts----------------------*/
+#charts div {
+    width: 125px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+}
+
+#charts {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+svg {
+    transform: rotate(-90deg);
+    background: #7D1D3F;
+    border-radius: 50%;
+    font-size: 32px;
+}
+
+svg:hover {
+    animation: emp 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes emp {
+    from {
+        box-shadow: 0px 0px 5px goldenrod;
+    }
+    to {
+        box-shadow: 0px 0px 20px goldenrod;
+    }
+}
+
+circle {
+    fill: #7D1D3F;
+    stroke: #E0E0E2;
+    stroke-width: 50;
+}
+
+#c1 {
+    animation: fill60;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+/*animates the pie chart to fill up 60%*/
+@keyframes fill60 {
+    0% {
+        stroke-dasharray: 0 157;
+    }
+
+    to {
+        /*60% * 157 = 94*/
+        stroke-dasharray: 94 157;
+    }
+}
+
+#c2 {
+    animation: fill25;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+/*animates the pie chart to fill up 25%*/
+@keyframes fill25 {
+    0% {
+        stroke-dasharray: 0 157;
+    }
+
+    to {
+        /*60% * 157 = 94*/
+        stroke-dasharray: 39 157;
+    }
+}
+
+#c3 {
+    animation: fill90;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+/*Added circle to the middle to create pie chart with border*/
+#mini-c {
+    fill: #7D1D3F;
+    stroke: none;
+    stroke-width: 0;
+}
+
+/*animates the pie chart to fill up 90%*/
+@keyframes fill90 {
+    0% {
+        stroke-dasharray: 0 157;
+    }
+
+    to {
+        /*60% * 157 = 94*/
+        stroke-dasharray: 141 157;
+    }
+}
+
+
+#hobby-circles {
+    border-radius: 50%;
+    background: #E9C46A;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+}
+
+#hobby-circles:hover {
+    animation: spin 2s forwards;
+}
+
+#hobby-circles div {
+    position: relative;
+}
+
+#hobby1 {
+    left: 120px;
+    top: 25px;
+}
+
+#hobby2 {
+    left: 200px;
+    top: 60px;
+}
+
+#hobby3 {
+    left: 100px;
+    top: 100px;
+}
+
+#hobby4 {
+    left: 50px;
+    top: -50px;
+}
+
+@keyframes spin {
+    20% {
+        box-shadow: 0px 0px 10px black;
+    }
+    to {
+        transform: rotate(1turn);
+        box-shadow: 0px 0px 10px black;
+    }
+}
