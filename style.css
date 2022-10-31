@@ -58,7 +58,7 @@ main {
 h1, h2, h3 {
     text-align: center;
     padding-bottom: 10px;
-    color: white;
+    color: rgb(157, 0, 0);
 }
 /*---------------------All bars in the skills bar graphs----------------------*/
 #display-pic {
