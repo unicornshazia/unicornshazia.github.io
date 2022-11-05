@@ -13,9 +13,6 @@ body {
 /*main page layout*/
 main {
     display: flex;
-    max-width: 800px;
-    height: 100%;
-    margin: auto;
 }
 
 .img-container {
@@ -24,7 +21,7 @@ main {
 
 /*Gives us more control over our image sizes*/
 .img-container img {
-    width: 100%;
+    width: 50%;
     /*Changes the width and keepts the aspect ratio*/
 }
 
@@ -248,53 +245,5 @@ circle {
     to {
         /*60% * 157 = 94*/
         stroke-dasharray: 141 157;
-    }
-}
-
-
-#hobby-circles {
-    border-radius: 50%;
-    background: #E9C46A;
-    width: 300px;
-    height: 300px;
-    margin: auto;
-}
-
-#hobby-circles:hover {
-    animation: spin 2s forwards;
-}
-
-#hobby-circles div {
-    position: relative;
-}
-
-#hobby1 {
-    left: 120px;
-    top: 25px;
-}
-
-#hobby2 {
-    left: 200px;
-    top: 60px;
-}
-
-#hobby3 {
-    left: 100px;
-    top: 100px;
-}
-
-#hobby4 {
-    left: 50px;
-    top: -50px;
-}
-
-@keyframes spin {
-    20% {
-        box-shadow: 0px 0px 10px black;
-    }
-
-    to {
-        transform: rotate(1turn);
-        box-shadow: 0px 0px 10px black;
     }
 }
