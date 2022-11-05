@@ -40,8 +40,8 @@ main {
 #left {
     padding: 2px;
     width: 40%;
-    background: #264653;
-    color: #E9C46A;
+    background: #75c1df;
+    color: #ddc586;
 }
 
 #contact-info p {
@@ -51,8 +51,8 @@ main {
 #right {
     padding: 2px;
     width: 60%;
-    background: #2A9D8F;
-    color: #FFB30F;
+    background: #86fcee;
+    color: #99e07b;
 }
 
 h1, h2, h3 {
@@ -151,7 +151,7 @@ h1, h2, h3 {
 
 svg {
     transform: rotate(-90deg);
-    background: #7D1D3F;
+    background: #8df4ba;
     border-radius: 50%;
     font-size: 32px;
 }
@@ -172,7 +172,7 @@ svg:hover {
 }
 
 circle {
-    fill: #7D1D3F;
+    fill: #7ef6ff;
     stroke: #E0E0E2;
     stroke-width: 50;
 }
@@ -221,7 +221,7 @@ circle {
 
 /*Added circle to the middle to create pie chart with border*/
 #mini-c {
-    fill: #7D1D3F;
+    fill: #da67b0;
     stroke: none;
     stroke-width: 0;
 }
