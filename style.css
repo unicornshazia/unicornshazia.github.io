@@ -24,7 +24,8 @@ main {
 
 /*Gives us more control over our image sizes*/
 .img-container img {
-    width: 100%;/*Changes the width and keepts the aspect ratio*/
+    width: 100%;
+    /*Changes the width and keepts the aspect ratio*/
 }
 
 /*sets all icons to be 48 pixels squared*/
@@ -55,15 +56,25 @@ main {
     color: #99e07b;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     text-align: center;
     padding-bottom: 10px;
+    padding-top: 10px;
     color: rgb(157, 0, 0);
 }
+
+/* Dashed border */
+hr.dashed {
+    border-top: 3px dashed #bbb;
+}
+
 /*---------------------All bars in the skills bar graphs----------------------*/
 #display-pic {
     width: 200px;
-    margin: auto; /*Centers the element*/
+    margin: auto;
+    /*Centers the element*/
     margin-top: 10px;
     margin-bottom: 10px;
     border-radius: 50%;
@@ -89,7 +100,8 @@ h1, h2, h3 {
     align-items: center;
 }
 
-#skill1:hover { /*animates for 1 second when the mouse hovers over it*/
+#skill1:hover {
+    /*animates for 1 second when the mouse hovers over it*/
     transition: all 3s;
     width: 95%;
 }
@@ -166,6 +178,7 @@ svg:hover {
     from {
         box-shadow: 0px 0px 5px goldenrod;
     }
+
     to {
         box-shadow: 0px 0px 20px goldenrod;
     }
@@ -279,6 +292,7 @@ circle {
     20% {
         box-shadow: 0px 0px 10px black;
     }
+
     to {
         transform: rotate(1turn);
         box-shadow: 0px 0px 10px black;
