@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: montserrat, sans-serif;
+    font-family: montserrat, Xanh Mono;
     height: 100vh;
 }
 
@@ -38,9 +38,11 @@ main {
 #left {
     padding: 2px;
     width: 40%;
-    background: #75c1df;
-    color: #ddc586;
-}
+     
+        background-image: linear-gradient(rgb(4, 0, 255), rgb(184, 140, 254), rgb(9, 9, 9));
+      };
+    
+
 
 #contact-info p {
     margin: 0px 0px 10px 10px;
@@ -49,8 +51,11 @@ main {
 #right {
     padding: 2px;
     width: 60%;
-    background: #86fcee;
-    color: #99e07b;
+    background: 
+      linear-gradient(rgb(128, 44, 238), rgb(243, 137, 7), rgb(13, 40, 216));
+      
+      ;
+    color: #ffffff;
 }
 
 h1,
@@ -59,12 +64,12 @@ h3 {
     text-align: center;
     padding-bottom: 10px;
     padding-top: 10px;
-    color: rgb(157, 0, 0);
+    color: rgb(235, 235, 235);
 }
 
 /* Dashed border */
 hr.dashed {
-    border-top: 3px dashed #bbb;
+    border-top: 3px dashed rgb(0, 0, 0);
 }
 
 /*---------------------All bars in the skills bar graphs----------------------*/
@@ -81,7 +86,7 @@ hr.dashed {
 /*a style that makes it look like the element increases in size when hovered over*/
 #display-pic:hover {
     transition: all 1s;
-    box-shadow: 0px 0px 10px white;
+    box-shadow: 0px 0px 10px rgb(255, 255, 255);
     transform: scale(1.05);
 }
 
@@ -89,7 +94,7 @@ hr.dashed {
 /*---------------------All bars in the skills bar graphs----------------------*/
 #skills div {
     height: 25px;
-    background: #E76F51;
+    background: #df55ba;
     margin: 10px;
     width: 50px;
     display: flex;
@@ -160,7 +165,7 @@ hr.dashed {
 
 svg {
     transform: rotate(-90deg);
-    background: #8df4ba;
+    background: #380ed0;
     border-radius: 50%;
     font-size: 32px;
 }
@@ -173,11 +178,11 @@ svg:hover {
 
 @keyframes emp {
     from {
-        box-shadow: 0px 0px 5px goldenrod;
+        box-shadow: 0px 0px 5px rgb(255, 255, 255);
     }
 
     to {
-        box-shadow: 0px 0px 20px goldenrod;
+        box-shadow: 0px 0px 20px rgb(40, 173, 210);
     }
 }
 
@@ -231,7 +236,7 @@ circle {
 
 /*Added circle to the middle to create pie chart with border*/
 #mini-c {
-    fill: #da67b0;
+    fill: #91eef5;
     stroke: none;
     stroke-width: 0;
 }
